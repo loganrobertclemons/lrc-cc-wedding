@@ -5,8 +5,8 @@ const Age = () => {
 
   const tick = () => {
     const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
-    const birthTime = new Date('1991-03-06T09:24:00');
-    setAge(((Date.now() - birthTime) / divisor).toFixed(11));
+    const firstDateTime = new Date('2017-07-13T18:30:00');
+    setAge(((Date.now() - firstDateTime) / divisor).toFixed(9));
   };
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Age = () => {
 const data = [
   {
     key: 'age',
-    label: 'Current age',
+    label: 'Years since our first date',
     value: <Age />,
   },
   {

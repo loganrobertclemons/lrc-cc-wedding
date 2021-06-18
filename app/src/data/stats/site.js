@@ -6,38 +6,22 @@ const data = [
   {
     label: 'Stars this repository has on github',
     key: 'stargazers_count',
-    link: 'https://github.com/loganrobertclemons/personal-site/stargazers',
+    link: 'https://github.com/loganrobertclemons/wedding-website/stargazers',
   },
   {
     label: 'Number of people watching this repository',
     key: 'subscribers_count',
-    link: 'https://github.com/loganrobertclemons/personal-site/stargazers',
+    link: 'https://github.com/loganrobertclemons/wedding-website/stargazers',
   },
   {
     label: 'Number of forks',
     key: 'forks',
-    link: 'https://github.com/loganrobertclemons/personal-site/network',
-  },
-  {
-    label: 'Number of spoons',
-    value: '0',
-  },
-  {
-    label: 'Number of linter warnings',
-    value: '0', // enforced via github workflow
+    link: 'https://github.com/loganrobertclemons/wedding-website/network',
   },
   {
     label: 'Open github issues',
     key: 'open_issues_count',
-    link: 'https://github.com/loganrobertclemons/personal-site/issues',
-  },
-  {
-    // TODO update this with a pre-commit hook
-    /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
-    xargs -I file cat file | wc -l */
-    label: 'Lines of Javascript powering this website',
-    value: '2115',
-    link: 'https://github.com/loganrobertclemons/personal-site/graphs/contributors',
+    link: 'https://github.com/loganrobertclemons/wedding-website/issues',
   },
 ];
 
