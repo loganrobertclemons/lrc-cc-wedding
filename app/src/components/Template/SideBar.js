@@ -9,22 +9,21 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+        <img src={`${PUBLIC_URL}/images/lc7.jpg`} alt="" />
       </Link>
       <header>
         <h2>Logan Clemons</h2>
-        <p><a href="mailto:loganrclemons@gmail.com">loganrclemons@gmail.com</a></p>
+        <p><a href="mailto:clemonswedding2020@gmail.com">clemonswedding2020@gmail.com</a></p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Logan. I&apos;m a cloud engineer. Let me build stuff for you.
-        I am a graduate of <a href="https://www.jmu.edu/index.shtml">James Madison University</a>
-        , and <a href="https://www.apsu.edu/">Austin Peay State University</a>
-        . I was a developer and SRE at <a href="https://www.davita.com/">Davita</a>
-        , and I am currently a Cloud Engineer at <a href="https://planet.com">Lirio</a>
-        , a behavioral science ai healthcare startup.
+      <p>Hi, we&apos;re getting married! Here&apos;s some info about our wedding.
+        Check out our {' '}
+        <Link to="/venues">venues</Link>, {' '}
+        view <Link to="/stats">site statistics</Link>, {' '}
+        or <Link to="/contact">contact</Link> us.
       </p>
       <ul className="actions">
         <li>
@@ -35,7 +34,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Logan Clemons <Link to="/">loganrobertclemons.com</Link>.</p>
+      <p className="copyright">&copy; Clemons Wedding 2021 <Link to="/">clemons.wedding</Link>.</p>
     </section>
   </section>
 );

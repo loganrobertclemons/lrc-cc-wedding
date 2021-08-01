@@ -42,11 +42,6 @@ const pages = [
     heading: 'Contact',
     component: Contact,
   },
-  {
-    route: '/resume',
-    heading: 'Resume',
-    component: Resume,
-  },
 ];
 
 // Adds router to Page context and allows us to navigate to the
