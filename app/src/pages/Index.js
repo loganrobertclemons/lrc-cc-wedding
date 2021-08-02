@@ -18,9 +18,14 @@ const Index = () => (
       </header>
       <p> Welcome to our wedding website - Read more <Link to="/about">about us</Link>,
         or you can check out our {' '}
-        <Link to="/venues">venue information</Link>, {' '}
-        view <Link to="/stats">site statistics</Link>, {' '}
+        <Link to="/events">event information</Link>, {' '}
+        view <Link to="/accomodations">places to stay</Link>, {' '}
         or <Link to="/contact">contact</Link> us.
+      </p>
+      <p>
+        We are registered at <a href="https://www.target.com/gift-registry/gift/3def3f99232244388a52cb086bc95c5a" target="_blank" rel="noreferrer">Target</a>
+        , as well as <a href="https://www.honeyfund.com/wedding/manning-clemons-11-06-2021" target="_blank" rel="noreferrer">HoneyFund</a>
+        , if you would like to purchase us a wedding present or contribute to our honeymoon.
       </p>
       <p>
         Our ceremony will be held on November 6th, 2021 at <a href="http://www.westendumc.org">West End United Methodist</a>
@@ -31,7 +36,6 @@ const Index = () => (
       {/* <p>
         Possibly where the registration goes
       </p> */}
-      <p> Source available <a href="https://github.com/loganrobertclemons/lrc-portfolio">here</a>.</p>
     </article>
   </Main>
 );

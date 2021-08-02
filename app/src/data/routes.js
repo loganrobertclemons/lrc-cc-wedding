@@ -9,13 +9,17 @@ const data = [
     label: 'About',
   },
   {
-    path: '/venues',
-    label: 'Venues',
+    path: '/events',
+    label: 'Events',
   },
   {
-    path: '/stats',
-    label: 'Stats',
+    path: '/accomodations',
+    label: 'Accomodations',
   },
+  // {
+  //   path: '/stats',
+  //   label: 'Stats',
+  // },
   {
     path: '/contact',
     label: 'Contact',

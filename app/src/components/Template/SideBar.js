@@ -21,13 +21,13 @@ const SideBar = () => (
       <h2>About</h2>
       <p>Hi, we&apos;re getting married! Here&apos;s some info about our wedding.
         Check out our {' '}
-        <Link to="/venues">venues</Link>, {' '}
-        view <Link to="/stats">site statistics</Link>, {' '}
+        <Link to="/events">events</Link>, {' '}
+        view <Link to="/accomodations">accomodations</Link>, {' '}
         or <Link to="/contact">contact</Link> us.
       </p>
       <ul className="actions">
         <li>
-          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
+          {!window.location.pathname.includes('/about') ? <Link to="/about" className="button">About Us</Link> : <Link to="/" className="button">General Info</Link>}
         </li>
       </ul>
     </section>

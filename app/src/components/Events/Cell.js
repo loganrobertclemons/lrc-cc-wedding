@@ -6,10 +6,11 @@ const Cell = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
       <header>
-        <h3><a href={data.link}>{data.title}</a></h3>
-        <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
+        <h3><a href={data.link} target="_blank" rel="noreferrer">{data.title}</a></h3>
+        <p><a href={data.maplink} target="_blank" rel="noreferrer">{data.subtitle}</a></p>
+        <time className="published">{dayjs(data.date).format('MMMM, DD, YYYY')} - {data.time}</time>
       </header>
-      <a href={data.link} className="image">
+      <a href={data.link} target="_blank" rel="noreferrer" className="image">
         <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
       </a>
       <div className="description">
@@ -22,9 +23,12 @@ const Cell = ({ data }) => (
 Cell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
     link: PropTypes.string,
+    maplink: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
+    date: PropTypes.string,
     desc: PropTypes.string.isRequired,
   }).isRequired,
 };

@@ -12,7 +12,8 @@ const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Index = lazy(() => import('./pages/Index'));
 const NotFound = lazy(() => import('./pages/NotFound'));
-const Venues = lazy(() => import('./pages/Projects'));
+const Events = lazy(() => import('./pages/Projects'));
+const Accomodations = lazy(() => import('./pages/Accomodations'));
 // const Resume = lazy(() => import('./pages/Resume'));
 const Stats = lazy(() => import('./pages/Stats'));
 
@@ -22,8 +23,9 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Index} />
         <Route path="/about" component={About} />
-        <Route path="/venues" component={Venues} />
+        <Route path="/events" component={Events} />
         <Route path="/stats" component={Stats} />
+        <Route path="/accomodations" component={Accomodations} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} status={404} />
       </Switch>
