@@ -1,7 +1,7 @@
 const data = [
   {
     path: '/',
-    label: 'Logan Clemons',
+    label: 'L&C Clemons Wedding',
     index: true,
   },
   {

@@ -12,8 +12,8 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/lc7.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Logan Clemons</h2>
-        <p><a href="mailto:clemonswedding2020@gmail.com">clemonswedding2020@gmail.com</a></p>
+        <h2>L&amp;C Clemons Wedding Info!</h2>
+        <p><a href="mailto:clemonswedding2020@gmail.com">@clemons-wedding.com</a></p>
       </header>
     </section>
 
@@ -34,7 +34,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Clemons Wedding 2021 <Link to="/">clemons.wedding</Link>.</p>
+      <p className="copyright">&copy; Clemons Wedding 2021 <Link to="/">2021.clemons-wedding</Link>.</p>
     </section>
   </section>
 );
